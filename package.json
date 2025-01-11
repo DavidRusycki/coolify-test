@@ -1,0 +1,20 @@
+{
+  "name": "coolify-test",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "build": "bun build ./index.ts --target=bun --outfile=build/server.js",
+    "production": "bun run build/server.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/figlet": "^1.7.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "figlet": "^1.8.0"
+  }
+}
